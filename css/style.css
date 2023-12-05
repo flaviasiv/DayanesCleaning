@@ -86,7 +86,7 @@ header {
     letter-spacing:1px
 }
 .menu-linksbtn a:hover{
-    color: #309AD7;
+    color: #0CC0DF;
     transition: 0.5s;
 }
 .menusocial{
@@ -109,11 +109,11 @@ header {
 .menusocial li:first-child{
     display: inline-flex;
     margin-right: 5px;
-    border: 1px solid #309AD7;
+    background-color: #0CC0DF;
     border-radius: 20px;
 }
 .menusocial a:first-child{
-    color: #309AD7;
+    color: #07041E;
     font-family: 'Urbanist', sans-serif;
     font-size: 16px;
     font-style: normal;
@@ -258,12 +258,12 @@ header {
       display: inline-flex;
       padding: 2px 4px;
       gap: 8px;
-      border: 1px solid #309AD7;
+      border: 1px solid #0CC0DF;
       margin-bottom: 10px;
       border-radius: 20px;
   }
   .menusocial a:first-child{
-      color: #309AD7;
+      color: #0CC0DF;
       font-size: 14px;
       font-style: normal;
       font-weight: 500;
@@ -342,10 +342,10 @@ header {
     padding-top: 40px;
 }
 .videop p span{
-    text-decoration:underline#309AD7 6px !important;
+    text-decoration:underline#0CC0DF 6px !important;
     text-underline-offset:15px !important;
     -webkit-text-decoration-line:  underline !important;
-    -webkit-text-decoration-color: #309AD7 !important;
+    -webkit-text-decoration-color: #0CC0DF !important;
     -webkit-text-decoration-style: solid !important;
     -webkit-text-decoration-thickness: 6px !important;
 }
@@ -405,6 +405,7 @@ header {
     max-width: 720px;
     margin: auto;
     float: left;
+    border-radius: 30px;
 }
 .about{
     position: relative;
@@ -544,18 +545,15 @@ header {
 }
 
 
-
-
-
 .servicescontainer{
-    background-color: #fff;
+    background-color: #F3F3F3;
     width: 100%;
     max-width: 3290px;
     margin: auto;
 }
 .services{
     width: 100%;
-    max-width: 3960px;
+    max-width: 1600px;
     margin: auto;
     padding: 70 0 20 0;
 }
@@ -664,6 +662,7 @@ header {
     max-width: 2990px;
     margin: auto;
     height: 100%;
+    background-color: #81DBF4;
     max-height: 700;
 }
 .preference{
@@ -678,8 +677,14 @@ header {
     justify-content: space-between;
     padding: 80px 50px 40px 50px;
 }
-.preferencecontainer .bgs-web{
-    max-height: 700px;
+.preferenceprinc{
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+}
+.bgs-pref{
+    max-height: 100%;
 }
 .preference h3{
     z-index: 9;
@@ -702,12 +707,11 @@ header {
     padding-top: 50px;
     padding-bottom: 40px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
 }
 .preferencecard{
     position: relative;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     text-align: center;
     align-items: center;
@@ -719,9 +723,11 @@ header {
 .preferencecard img{
     display: block;
     max-width: 112px;
+    margin: auto;
+    margin-right: 10px;
 }
 .preferencecard h5{
-    color: #309AD7;
+    color: #082F42;
     text-align: center;
     font-family: 'Outfit', sans-serif;
     font-size: 12px;
@@ -730,16 +736,6 @@ header {
     line-height: 100%; /* 20px */
     margin-top: 16px;
     width: 265px;
-}
-.preferencecard p{
-    color: #309AD7;
-    text-align: center;
-    font-family: 'Outfit', sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 18.2px;
-    margin-top: 16px;
 }
 @media screen and (max-width: 1299px) {
     .preferencecontainer{
@@ -761,11 +757,6 @@ header {
 .preference h3{
     width: 252px;
     font-size: 30px;
-}
-.preference p{
-    width: 344px;
-    font-size: 16px;
-    margin-top: 25px;
 }
 .preferencegrid{
     display: flex;
@@ -806,11 +797,6 @@ header {
     width: 252px;
     font-size: 30px;
 }
-.preference p{
-    width: 344px;
-    font-size: 16px;
-    margin-top: 25px;
-}
 .preferencegrid{
     display: flex;
     flex-direction: column;
@@ -831,9 +817,6 @@ header {
 }
 .preferencecard h5{
     font-size: 14px;
-}
-.preferencecard p{
-    font-size: 12px;
 }
 }
 .request{
@@ -859,7 +842,7 @@ header {
     align-items: center;
     gap: 8px;
     border-radius: 72px;
-    background: #309AD7;
+    background: #0CC0DF;
     color: #07041E;
     font-size: 18px;
     font-weight: 700;
@@ -922,35 +905,24 @@ text-align: center;
 .portifoliotitle h2 svg{
     margin-top: 16px;
 }
-.portifoliotitle p{
-    display: block;
-    max-width: 447px;
-    text-align: center;
-    margin: auto;
-    font-size:16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%; 
-    margin-bottom: 50px;
-}
 
 swiper-container.mySwiper2 {
   width: 100%;
   height: 100%;
-  max-height: 495px;
+  max-height: 735px;
   cursor: grab;
   margin: 0 !important;
 }
 swiper-slide.swiper2 {
-  max-width: 476px;
+  max-width: 706px;
   border-radius: 30px;
   margin-left: 0px;
 }
 .swiper2 img {
-  width: 460px !important;
+  width: 700px !important;
   max-width: 100% !important;
   margin: auto;
-  height: 460px;
+  height: 700px;
   border-radius: 32px;
   justify-content: start;
   object-fit: cover !important;
@@ -1015,20 +987,35 @@ swiper-slide.swiper2 {
     z-index: 0;
 }
 .bgs-mob{display: none;}
+
+
+
+
 .reviewscontainer{
     position: relative;
     width: 100%;
     max-width: 3000px;
     margin: auto;
     height: 100%;
-    max-height: 640px;
+    max-height: 530px;
+    background-color: #082F42;
+}
+.bgs-reviews2{
+position: absolute;
+right: 120;
+bottom: 80;
+}
+.bgs-reviews1{
+    position: absolute;
+    top: 50;
+    left: 130;
 }
 .review{
     display: block;
     width: 100%;
     max-width: 1340px;
     margin: auto;
-    padding: 0 50;
+    padding: 0 20;
 }
 .reviewstitle h2{
     position: relative;
@@ -1036,7 +1023,7 @@ swiper-slide.swiper2 {
     color: #FFF;
     display: flex;
     flex-direction: column;
-    max-width: 150px;
+    max-width: 330px;
     margin: auto;
     padding: 40px 0 0 0;
     text-align: center;
@@ -1044,7 +1031,8 @@ swiper-slide.swiper2 {
     font-weight: 600;
 }
 .reviewstitle h2 svg{
-    margin-left: 42px;
+    left: 50%;
+    transform: translateX(200%);
 }
 .mySwiper3{
   width: 100%;
@@ -1163,10 +1151,9 @@ swiper-slide.swiper2 {
     width: 100%;
     max-width: 2990px;
     height: 100%;
-    max-height: 800px;
+    max-height: 1800px;
     margin: auto;
-    background-color: #07041E;
-    padding: 50px 0;
+    padding: 0px 0;
 }
 .form {
     z-index: 1;
@@ -1220,11 +1207,11 @@ form {
     border-radius: 16px;
     padding: 10px;
     margin: auto;
-    background-color: #309AD7;
+    background-color: #0CC0DF;
     cursor: pointer;
 }
 #form button:hover{
-    background-color: #309ad7cc;
+    background-color: #0CC0DFcc;
     transition: 0.7s;
 }
 .formgroup1, .formgroup2{
@@ -1239,7 +1226,7 @@ form {
     margin: auto;
     margin-top: 200px;
     padding: 34px 0;
-    background-color: #309AD7;
+    background-color: #0CC0DF;
     align-items: center;
     text-align: center;
 }
@@ -1284,7 +1271,7 @@ form {
         width: 110px;
         border-radius: 5px;
         list-style: none;
-        color: #309AD7;
+        color: #0CC0DF;
         border-radius: 16px;
         padding: 8px;
         margin: auto;
@@ -1349,11 +1336,11 @@ form {
         border-radius: 16px;
         padding: 10px;
         margin: auto;
-        background-color: #309AD7;
+        background-color: #0CC0DF;
         cursor: pointer;
     }
     #form button:hover{
-        background-color: #309ad7cc;
+        background-color: #0CC0DFcc;
         transition: 0.7s;
     }
     .formgroup1, .formgroup2{
@@ -1368,7 +1355,7 @@ footer{
     max-width: 2990px;
     margin: auto;
     height: auto;
-    background-color: #309AD7;
+    background-color: #0CC0DF;
     color: #fff;
 }
 .footergrid{
@@ -1481,7 +1468,7 @@ footer{
     max-width: 2990px;
     margin: auto;
     padding: 34px 0;
-    background-color: #309AD7;
+    background-color: #0CC0DF;
     align-items: center;
     text-align: center;
     border-top: 1px solid #fff;
