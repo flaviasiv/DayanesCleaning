@@ -216,7 +216,7 @@ header {
       padding: 0px;
   }
   .menu-links{
-    background-color: #07041E;
+    background-color: #082F42;
   flex-direction: column;
   align-items:center;
   margin-top: 0px;
@@ -248,7 +248,6 @@ header {
       margin-bottom: 10px;
   }
   .menusocial ul li:last-child{
-      margin-top: -0.1px;
       margin-left:5;
   }
   .menusocial ul a {
@@ -265,7 +264,6 @@ header {
       border-radius: 20px;
   }
   .menusocial a:first-child{
-      color: #0CC0DF;
       font-size: 14px;
       font-style: normal;
       font-weight: 500;
@@ -328,9 +326,8 @@ header {
 .videobg::after {
     content: '';
     inset: 0;
-    background-color: #e8f7ff56 !important;
-    position: absolute;
-}
+    background: linear-gradient(0deg, rgba(8, 47, 66, 0.30) 0%, rgba(8, 47, 66, 0.30) 100%), linear-gradient(180deg, rgba(8, 47, 66, 0.00) 0%, #082F42 100%);    
+    position: absolute;}
 .videop p{
     color: #fff;
     width: 358px;
@@ -480,18 +477,29 @@ header {
 }
 @media screen and (max-width:790px) {
     .aboutcontainer{
-        height:936;
+        height:100%;
+        z-index: 99;
         max-height: auto;
     }
     .abouttext{ 
         max-width: 788px;
         margin: 30 40;
     }
+    .abouttext h2{
+        text-align: center
+    }
+    .abouttext h2 svg{
+        text-align: center;
+        margin: auto;
+        margin-top: 16px;
+    }
     .abouttext p{
+        text-align: center;
         font-size: 14px;
     }
     .abouttext h6{
         font-size: 14px;
+        text-align: center;
     }
 }
 .missioncontainer{
@@ -575,8 +583,9 @@ header {
         padding-bottom: 70;
     }
     .mission img{
-        max-width: 227.5px;
+        max-width: 300px;
         margin: 50px auto;
+        padding-left: 20px;
     }
     .missioninfo {
         max-width: 437.5px;
@@ -721,17 +730,17 @@ header {
 }
 @media screen and (max-width:790px) {
     .servicescontainer{
-    padding: 100 10 0 10;
+    padding: 100 0 0 0;
     }
     .servicestitle p{
         margin: auto;
-        padding: 0 30;
+        padding: 0 40;
         font-size:14px;
         margin-bottom: 40px;
     }
     .swiper1 {
-        max-width: 356px;
-        margin-left: 10px;
+        max-width: 100%;
+        margin: 0px;
     }
 }
 .request{
@@ -776,7 +785,6 @@ header {
     }
 }
 @media screen and (max-width:790px) {
-    
 .request{
     padding-top: 0;
     margin-top: -25;
@@ -870,16 +878,16 @@ swiper-slide.swiper2 {
     width: 100%;
     max-width: 3290px;
     margin: 0 auto;
-    padding: 0px 20px 190px 10;
+    padding: 0 0 190px 0;
 }
 swiper-container.mySwiper2 {
   max-height: 430px;
   cursor: grab;
   margin: 0 !important;
 }
-swiper-slide.swiper2 {
-  max-width: 456px;
-  margin-left: 0px;
+swiper-slide.swiper2 {  
+        max-width: 100%;
+        margin: 0px;
 }
 .swiper2 img {
   width: 100% !important;
@@ -949,7 +957,7 @@ bottom: 50;
   height: 100%;
   max-height: 400px;
   cursor: grab;
-  margin: 50 0 !important;
+  margin: 0 !important;
 }
 .swiper3 {
   text-align: center;
@@ -1025,7 +1033,7 @@ bottom: 50;
         width: 100%;
         max-width: 1340px;
         margin: auto;
-        padding: 0 50;
+        padding: 0;
     }
     .bgs-reviews2{
         max-width: 50;
@@ -1170,7 +1178,7 @@ bottom: 50;
 } */
 @media screen and (max-width: 870px) {
     .preferencecontainer{
-        height: 1200;
+        max-height: 1300;
     }
     .preference{
         margin: auto;
@@ -1183,7 +1191,7 @@ bottom: 50;
     padding: 0 0;
 }
 .bgs-pref{
-    max-width: 280;
+    max-width: 350;
 }
 .preference h3{
     width: 252px;
@@ -1192,23 +1200,27 @@ bottom: 50;
 .preferencegrid{
     display: flex;
     flex-direction: column;
-    padding-bottom: 0px;
-    padding-bottom: 50;
+    padding-bottom: 0;
+    padding-top: 50px;
 }
 .preferencecard{
+    flex-direction: column;
     padding-bottom: 30px;
-    max-width: 200;
     margin: auto;
-    margin-top: 0;
+    margin-bottom: 0;
 }
 .preferencecard:last-child{
     padding-bottom: 0;
 }
 .preferencecard img{
     max-width: 73px;
+    margin: auto;
 }
 .preferencecard h5{
     font-size: 14px;
+    max-width: 190;
+    text-align: center;
+    margin: 20 auto 0 auto;
 }
 }
 .bgs-web{
@@ -1287,6 +1299,8 @@ form {
     width: 100%;
     list-style: none;
     padding: 20px;
+    border-radius: 16px;
+    border: 1px solid #333333d8;
 }
 #form input{
     height:  46px;    
@@ -1302,7 +1316,6 @@ form {
     width: 180px;
     border-radius: 5px;
     list-style: none;
-    border: 2px solid #fff;
     color: #07041E;
     border-radius: 16px;
     padding: 10px;
@@ -1384,9 +1397,6 @@ form {
     }
 }
 @media screen and (max-width:1290px) {
-    .formgrid{
-        max-height: 670px;
-    }
 }
 
 @media screen and (max-width:770px) {
@@ -1400,7 +1410,8 @@ form {
         width: 100%;
         object-fit: cover;
         max-width: 2999px;
-        max-height: 100%;
+        height: 100%;
+        max-height: 1300;
         flex-shrink: 0;
         z-index: 0;
     }
@@ -1408,7 +1419,7 @@ form {
         display: none;
     }
     .formgrid{
-        max-height: 1370px;
+        height: 1000;
         margin: auto;
         justify-content: center;
     }
@@ -1418,6 +1429,7 @@ form {
         margin: 0 65 40 65;
     }
     .form{
+        margin: auto;
         width: 370px;
         height: 390px;
     }
@@ -1442,7 +1454,7 @@ form {
         justify-content: right;
         flex-direction: column;
         padding: 40px;
-        height: 360;
+        height: 375;
         gap: 15px;
     }
     #form input, textarea, select{
@@ -1488,7 +1500,7 @@ footer{
     margin: auto;
     height: auto;
     background-color: #082F42;
-    color: #fff;
+    color: #0CC0DF;
 }
 .footergrid{
     display: flex;
@@ -1506,14 +1518,14 @@ footer{
 }
 .footermenu ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #0CC0DF;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
     line-height: 130%;
 }
 .footermenu ul li a:hover {
-    color: #ffffffa9;
+    color: #0cbfdfc5;
     transition: 0.5s;
 }
 .footermenu ul{
@@ -1547,7 +1559,7 @@ footer{
 .adress p{
     text-align: center;
     width: auto;
-    color: #fff;
+    color: #0CC0DF;
     font-size: 16px;
     font-weight: 600;
     line-height: 120%; /* 25.6px */
@@ -1560,7 +1572,7 @@ footer{
 .footersocials p{
     text-align: right;
     margin-right:20px;
-    color: #fff;
+    color: #0CC0DF;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -1587,10 +1599,10 @@ footer{
     background-color: #082F42;
     align-items: center;
     text-align: center;
-    border-top: 1px solid #fff;
+    border-top: 0.01rem solid #0CC0DF;
 }
 .rights p{
-    color: #fff;
+    color: #0CC0DF;
     font-size: 14.4px;
     font-weight: 500;
     line-height: 150%;
