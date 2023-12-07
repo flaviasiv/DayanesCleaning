@@ -22,6 +22,7 @@ header {
     margin: auto;
     background-color:#082F42;
     height: 70px;
+    z-index: 99999;
 }
 #home:before {
     content: '';
@@ -406,7 +407,6 @@ header {
     max-width: 720px;
     margin: auto;
     float: left;
-    border-radius: 30px;
 }
 .about{
     position: relative;
@@ -870,7 +870,7 @@ swiper-slide.swiper2 {
     width: 100%;
     max-width: 3290px;
     margin: 0 auto;
-    padding: 0px 20px 100px 10;
+    padding: 0px 20px 190px 10;
 }
 swiper-container.mySwiper2 {
   max-height: 430px;
@@ -896,8 +896,155 @@ swiper-slide.swiper2 {
     display: block;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,1200%);
+    transform: translate(-50%,820%);
 }
+}
+.reviewscontainer{
+    position: relative;
+    width: 100%;
+    max-width: 3000px;
+    margin: auto;
+    margin-top: 100;
+    padding-top: 50;
+    height: 100%;
+    max-height: 600px;
+    background-color: #082F42;
+}
+.bgs-reviews2{
+position: absolute;
+right: 120;
+bottom: 50;
+}
+.bgs-reviews1{
+    position: absolute;
+    top: 50;
+    left: 130;
+}
+.review{
+    display: block;
+    width: 100%;
+    max-width: 1340px;
+    margin: auto;
+    padding: 0 20;
+}
+.reviewstitle h2{
+    position: relative;
+    z-index: 99;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    max-width: 330px;
+    margin: auto;
+    padding: 40px 0 0 0;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+}
+.reviewstitle h2 svg{
+    left: 50%;
+    transform: translateX(200%);
+}
+.mySwiper3{
+  width: 100%;
+  height: 100%;
+  max-height: 400px;
+  cursor: grab;
+  margin: 50 0 !important;
+}
+.swiper3 {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  max-width: 283px;
+  max-height: 300;
+  border-radius: 23px;
+  background-color: #fff;
+  margin-left: 105px;
+  padding: 30px 16px;
+}
+.swiper3 .servicescard svg {
+  width: 100% !important;
+  margin: auto;
+  object-position: center;
+}
+.swiper3 p{
+    max-width: 250px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: center;
+    color: #07041E;
+    margin: auto;
+    margin-top: 15px;
+}
+.swiper3 h2{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    color: #07041E;
+    margin-top: 15px;
+}
+.swiper3 h6{
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 12px;
+    text-align: center;
+    color: #07041E;
+    margin-top: 15px;
+}/*  
+@media screen and (max-width:1390px) {
+    .reviewscontainer{
+        background-color: #07041E;
+        max-height: 410px;
+    }
+    .swiper3 {
+      margin-left: 70px;
+    }
+    .mySwiper3{
+      max-height: 390px;
+      margin: 40 50 !important;
+    }
+
+}*/
+@media screen and (max-width: 1090px) {/*  
+    .review{
+        width: 100%;
+        max-width: 1340px;
+        margin: auto;
+        padding: 0 20;
+    }
+    .swiper3 {
+      margin-left: 0px;
+    }*/
+}
+@media screen and (max-width: 790px) {
+    .review{
+        width: 100%;
+        max-width: 1340px;
+        margin: auto;
+        padding: 0 50;
+    }
+    .bgs-reviews2{
+        max-width: 50;
+    right: 40;
+    bottom: 20;
+    }
+    .bgs-reviews1{
+        max-width: 70;
+        top: 20;
+        left: 40;
+    }
+    .mySwiper3{
+      margin: 50 0 !important;
+      max-height: 340;
+
+    }
+    .swiper3 {
+      margin-left: 0px;
+    }
 }
 .preferencecontainer{
     width: 100%;
@@ -1020,17 +1167,23 @@ swiper-slide.swiper2 {
     font-size: 16px;
     max-width: 350;
 }
-}
+} */
 @media screen and (max-width: 870px) {
     .preferencecontainer{
         height: 1200;
-        background-color: #07041E;
     }
-.preference {
+    .preference{
+        margin: auto;
+        padding: 0;
+    }
+.preferenceprinc {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
-    padding: 50 10;
+    padding: 0 0;
+}
+.bgs-pref{
+    max-width: 280;
 }
 .preference h3{
     width: 252px;
@@ -1040,11 +1193,11 @@ swiper-slide.swiper2 {
     display: flex;
     flex-direction: column;
     padding-bottom: 0px;
-    padding: 10;
+    padding-bottom: 50;
 }
 .preferencecard{
     padding-bottom: 30px;
-    max-width: 250;
+    max-width: 200;
     margin: auto;
     margin-top: 0;
 }
@@ -1057,8 +1210,7 @@ swiper-slide.swiper2 {
 .preferencecard h5{
     font-size: 14px;
 }
-} */
-
+}
 .bgs-web{
     display: block;
     pointer-events: none;
@@ -1073,164 +1225,6 @@ swiper-slide.swiper2 {
 .bgs-mob{display: none;}
 
 
-
-
-.reviewscontainer{
-    position: relative;
-    width: 100%;
-    max-width: 3000px;
-    margin: auto;
-    margin-top: 100;
-    padding-top: 50;
-    height: 100%;
-    max-height: 600px;
-    background-color: #082F42;
-}
-.bgs-reviews2{
-position: absolute;
-right: 120;
-bottom: 50;
-}
-.bgs-reviews1{
-    position: absolute;
-    top: 50;
-    left: 130;
-}
-.review{
-    display: block;
-    width: 100%;
-    max-width: 1340px;
-    margin: auto;
-    padding: 0 20;
-}
-.reviewstitle h2{
-    position: relative;
-    z-index: 99;
-    color: #FFF;
-    display: flex;
-    flex-direction: column;
-    max-width: 330px;
-    margin: auto;
-    padding: 40px 0 0 0;
-    text-align: center;
-    font-size: 32px;
-    font-weight: 600;
-}
-.reviewstitle h2 svg{
-    left: 50%;
-    transform: translateX(200%);
-}
-.mySwiper3{
-  width: 100%;
-  height: 100%;
-  max-height: 400px;
-  cursor: grab;
-  margin: 50 0 !important;
-}
-.swiper3 {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  max-width: 283px;
-  max-height: 300;
-  border-radius: 23px;
-  background-color: #fff;
-  margin-left: 105px;
-  padding: 30px 16px;
-}
-.swiper3 .servicescard svg {
-  width: 100% !important;
-  margin: auto;
-  object-position: center;
-}
-.swiper3 p{
-    max-width: 250px;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 18px;
-    text-align: center;
-    color: #07041E;
-    margin: auto;
-    margin-top: 15px;
-}
-.swiper3 h2{
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 24px;
-    text-align: center;
-    color: #07041E;
-    margin-top: 15px;
-}
-.swiper3 h6{
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 12px;
-    text-align: center;
-    color: #07041E;
-    margin-top: 15px;
-}/*  
-@media screen and (max-width:1390px) {
-    .reviewscontainer{
-        background-color: #07041E;
-        max-height: 410px;
-    }
-    .swiper3 {
-      margin-left: 70px;
-    }
-    .mySwiper3{
-      max-height: 390px;
-      margin: 40 50 !important;
-    }
-
-}
-@media screen and (max-width: 1090px) {
-    .bgs-web{
-        display: none;
-    }
-    .bgs-mob{
-        display: block;
-        pointer-events: none;
-        position: absolute;
-        width: 100%;
-        object-fit: cover;
-        max-width: 2999px;
-        max-height: 100%;
-        flex-shrink: 0;
-        z-index: 0;
-    }
-    .review{
-        width: 100%;
-        max-width: 1340px;
-        margin: auto;
-        padding: 0 20;
-    }
-    .swiper3 {
-      margin-left: 0px;
-    }
-}
-@media screen and (max-width: 790px) {
-    .reviewscontainer{
-        width: 100%;
-        max-width: 3000px;
-        margin: auto;
-        height: 100%;
-        max-height: 450px;
-    }
-    .review{
-        width: 100%;
-        max-width: 1340px;
-        margin: auto;
-        padding: 0 50;
-    }
-    .swiper3 {
-      margin-left: 0px;
-    }
-    .mySwiper3{
-      margin: 50 0 !important;
-    }
-}*/
 .formgrid{
     display: flex;
     position: relative;
@@ -1240,7 +1234,7 @@ bottom: 50;
     max-height: 1100px;
     margin: auto;
     background-color: #000; /* !! */
-    padding: 0px 0;
+    padding: 0;
 }
 .form {
     z-index: 1;
@@ -1343,7 +1337,7 @@ form {
     font-weight: 500;
     line-height: 150%;
 }
-/*@media screen and (max-width:1000px) {    
+@media screen and (max-width:1000px) {    
     .form{
         position: absolute;
         display: block;
@@ -1362,6 +1356,7 @@ form {
         justify-content: right;
         flex-direction: column;
         gap: 17px;
+        padding: 50px;
     }
     #form input, textarea{
         width: 100%;
@@ -1390,25 +1385,55 @@ form {
 }
 @media screen and (max-width:1290px) {
     .formgrid{
-        background-color: #07041E;
         max-height: 670px;
     }
 }
+
 @media screen and (max-width:770px) {
+    .bgs-web{
+        display: none;
+    }
+    .bgs-mob{
+        display: block;
+        pointer-events: none;
+        position: absolute;
+        width: 100%;
+        object-fit: cover;
+        max-width: 2999px;
+        max-height: 100%;
+        flex-shrink: 0;
+        z-index: 0;
+    }
+    .formimgsbg{
+        display: none;
+    }
     .formgrid{
-        background-color: #07041E;
-        max-height: 670px;
+        max-height: 1370px;
+        margin: auto;
+        justify-content: center;
+    }
+    .logoform{
+        max-width: 236px;
+        justify-content: center;
+        margin: 0 65 40 65;
     }
     .form{
         width: 370px;
-        margin: auto;
-        height: 420px;
-        padding: 30px;
+        height: 390px;
     }
     .form h2{
         font-size: 32;
         line-height: 32px;
         margin-bottom: 30px;
+        max-width: 250;
+        margin: auto;
+    }
+    .form p{
+        max-width: 289px;
+        margin:  40px auto;
+        font-size: 14px;
+        letter-spacing:1px;
+        text-align: center;
     }
     form {
         width: 100%;
@@ -1416,6 +1441,8 @@ form {
         display: flex;
         justify-content: right;
         flex-direction: column;
+        padding: 40px;
+        height: 360;
         gap: 15px;
     }
     #form input, textarea, select{
@@ -1453,8 +1480,7 @@ form {
         display: flex;
         gap: 20px;
     }
-}*/
-
+}
 footer{
     position: relative;
     width: 100%;
