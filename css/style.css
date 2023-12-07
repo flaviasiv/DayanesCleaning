@@ -738,9 +738,14 @@ header {
         font-size:14px;
         margin-bottom: 40px;
     }
+    
+.mySwiper {
+    max-height: 630px;
+  }
     .swiper1 {
-        max-width: 100%;
-        margin: 0px;
+        max-width: 365px;
+        max-height: 600;
+        margin: 0 10px;
     }
 }
 .request{
@@ -886,7 +891,8 @@ swiper-container.mySwiper2 {
   margin: 0 !important;
 }
 swiper-slide.swiper2 {  
-        max-width: 100%;
+        max-width: 470px;
+        height: 100%;
         margin: 0px;
 }
 .swiper2 img {
@@ -1562,7 +1568,7 @@ footer{
     color: #0CC0DF;
     font-size: 16px;
     font-weight: 600;
-    line-height: 120%; /* 25.6px */
+    line-height: 130%;
 }
 .footersocials{
     justify-content: right;
@@ -1620,7 +1626,7 @@ footer{
         display: flex;
         flex-direction: column;
         width: 100%;
-        max-width: 540px;
+        max-width: 290px;
         margin: auto;
         justify-content: space-between;
         padding: 10 0;
@@ -1639,14 +1645,6 @@ footer{
         height: auto;
         text-align: center;
     }
-    .hours ul, .hours{
-        text-align: center;
-        height: 222px;
-    }
-    .hours{
-        margin-top: 80;
-        margin-bottom: -60;
-    }
     .adress{
         display: flex;
         margin: auto;
@@ -1664,7 +1662,7 @@ footer{
         display: flex;
         margin: auto;
         justify-content: center;
-        padding: 20 0 20 0; 
+        padding: 20 0 40 0; 
     }
     .footerimglogo img{
         margin-top: 0px;
@@ -1674,7 +1672,7 @@ footer{
     }
     .footersocials{
         margin-left: 0px;
-        margin-top: 20px;
+        margin-top: 45px;
         display: flex;
         flex-direction: column;
         justify-content: center;
