@@ -1007,7 +1007,7 @@ bottom: 50;
     width: 100%;
     max-width: 1340px;
     margin: auto;
-    padding: 0 20;
+    padding: 0;
 }
 .reviewstitle h2{
     position: relative;
@@ -1021,6 +1021,7 @@ bottom: 50;
     text-align: center;
     font-size: 32px;
     font-weight: 600;
+    margin-bottom: 50px;
 }
 .reviewstitle h2 svg{
     left: 50%;
@@ -1029,7 +1030,7 @@ bottom: 50;
 .mySwiper3{
   width: 100%;
   height: 100%;
-  max-height: 400px;
+  max-height: 350px;
   cursor: grab;
   margin: 0 !important;
 }
@@ -1043,8 +1044,13 @@ bottom: 50;
   max-height: 300;
   border-radius: 23px;
   background-color: #fff;
-  margin-left: 105px;
+  margin-left: 25px;
   padding: 30px 16px;
+}
+.swiper3 .servicescard{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
 }
 .swiper3 .servicescard svg {
   width: 100% !important;
@@ -1076,31 +1082,21 @@ bottom: 50;
     text-align: center;
     color: #07041E;
     margin-top: 15px;
-}/*  
-@media screen and (max-width:1390px) {
-    .reviewscontainer{
-        background-color: #07041E;
-        max-height: 410px;
+}
+@media screen and (max-width: 1290px) {
+    .bgs-reviews2{
+    position: absolute;
+    max-width: 100;
+    right: 100;
+    bottom: 10;
     }
-    .swiper3 {
-      margin-left: 70px;
+    .bgs-reviews1{
+        position: absolute;
+        max-width: 100;
+        top: 50;
+        left: 130;
     }
-    .mySwiper3{
-      max-height: 390px;
-      margin: 40 50 !important;
-    }
-
-}*/
-@media screen and (max-width: 1290px) {/*  
-    .review{
-        width: 100%;
-        max-width: 1340px;
-        margin: auto;
-        padding: 0 20;
-    }
-    .swiper3 {
-      margin-left: 0px;
-    }*/
+    
 }
 @media screen and (max-width: 790px) {
     .review{
