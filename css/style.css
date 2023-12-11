@@ -408,7 +408,7 @@ header {
 .about{
     position: relative;
     width: 100%;
-    max-width: 1500px;
+    max-width: 1250px;
     margin: auto;
     justify-content: space-between;
     padding:0;
@@ -1360,10 +1360,10 @@ form {
     gap: 20px;
     width:700px;
     max-width: 100%;
-    height: 440px;
+    height: 450px;
     background-color: #FFF;
     border-radius: 25px;
-    padding: 80px;
+    padding: 70px 80px;
 }
 #form input, textarea, select{
     width: 100%;
@@ -1396,6 +1396,21 @@ form {
 #form button:hover{
     background-color: #0CC0DFcc;
     transition: 0.7s;
+}
+.form h6{
+    display: flex;
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 70px;
+    padding: auto;
+    margin: auto;
+    margin-top: -5px;
 }
 .formgroup1, .formgroup2{
     display: flex;
