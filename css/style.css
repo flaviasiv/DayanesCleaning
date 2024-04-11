@@ -459,8 +459,8 @@ header {
 }
 .reveal{
     position: relative;
-    transform: translateX(-150%);
-    opacity: 0;
+    transform: translateX(-50%);
+    opacity: 20%;
     transition: 1s all ease;
 }
 .reveal.active{
@@ -1200,52 +1200,7 @@ bottom: 50;
     width: 319px;
     padding-bottom: 10;
     margin-left: 24PX;
-}/* 
-@media screen and (max-width: 1299px) {
-    .preferencecontainer{
-        max-height: 565;
-    }
 }
-@media screen and (max-width: 1070px) {
-    .preferencecontainer{
-        height: 1700;
-        max-height: 1700;
-    }
-.preference {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-right: 0;
-    padding-left: 0;
-}
-.preference h3{
-    width: 252px;
-    font-size: 30px;
-}
-.preferencegrid{
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 0px;
-}
-.preferencecard{
-    padding-bottom: 34px;
-    max-width: 400;
-    margin-top: 60;
-}
-.preferencecard:last-child{
-    padding-bottom: 0;
-}
-.preferencecard img{
-    max-width: 293px;
-}
-.preferencecard h5{
-    font-size: 20px;
-}
-.preferencecard p{
-    font-size: 16px;
-    max-width: 350;
-}
-} */
 @media screen and (max-width: 1070px) {
     .preferencecontainer{
         max-height: 850;
@@ -1313,10 +1268,13 @@ bottom: 50;
     width: 100%;
     max-width: 2990px;
     height: 100%;
-    max-height: 1100px;
+    height: 1060px;
     margin: auto;
     background-color: #000; /* !! */
     padding: 0;
+}
+.formgrid .bgs-web{
+    height: 100%;
 }
 .form {
     z-index: 1;
@@ -1336,6 +1294,7 @@ bottom: 50;
     font-size: 32px;
     font-weight: 700;
     margin: auto;
+    padding: 40px 0 0;
     display: flex;
     flex-direction: column;
 }
@@ -1345,11 +1304,12 @@ bottom: 50;
 }
 .form p{
     max-width: 459px;
-    margin:  40px auto;
+    margin: 40px auto;
     font-size: 16px;
     font-weight: 400;
     line-height: 130%; 
     letter-spacing: 0.64px;
+    text-align: center;
 }
 form {
     width: 100%;
@@ -1455,7 +1415,7 @@ form {
         display: none;
     }
     .formgrid{
-        height: 1100;
+        height: 1000px;
         margin: auto;
         justify-content: space-around;
     }
@@ -1472,7 +1432,6 @@ form {
     .form h2{
         font-size: 32;
         line-height: 32px;
-        margin-bottom: 30px;
         max-width: 250;
     }
     .form p{
@@ -1480,7 +1439,6 @@ form {
         margin:  40px auto;
         font-size: 14px;
         letter-spacing:1px;
-        text-align: center;
     }
     form {
         width: 100%;
@@ -1827,150 +1785,3 @@ footer{
 :root {
     --scroll: 0
 }
-/*
-.teamcontainer{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 100%;
-    max-width: 2990px;
-    margin: auto;
-    align-items: center;
-    color: #07041E;
-}
-.teamcontainer h2{
-    margin-top: 60px;
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    font-family: 'Urbanist';
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 600;
-}
-.teamcontainer h2 svg{
-    margin-top: 16px;
-}
-.teamtitle{
-max-width: 800px;
-text-align: center;
-margin-bottom: 30px;
-}
-
-.teamgrid{
-    display: flex;
-    justify-content: space-between;
-    height: auto;
-    width: 100%;
-    max-width: 1016px;
-    margin: auto;
-    margin-bottom: 100px;
-    text-align: center;
-}
-.teamgrid .teamgridcard h3{
-    margin-top: 32px;
-    font-family: 'Urbanist', sans-serif;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 400;
-}
-.teamgrid .teamgridcard p{
-    margin-top: 16px;
-    font-family: 'Urbanist', sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    opacity: 0.3;
-}
-.teamgrid .teamgridcard a{
-    padding-top: 16px;
-    color: var(--high-tiffany, #9BEBEC);
-    font-family: 'Urbanist';
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    text-decoration: none;
-    color: #07041E;
-    opacity: 0.6;
-}
-.teamgridcard img{
-    width: 100%;
-}
-.teamgridcard:hover > img{
-    width: calc(100% + 5%);
-    margin-left: -2.5%;
-    margin-bottom: -3%;
-    transition: 1s all ease;
-}
-@media screen and (max-width:990px) {
-    .teamcontainer{
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        width: 100%;
-        max-width: 2990px;
-        margin: auto;
-        color: #FFF;
-        align-items: center;
-    }
-    .teamcontainer h2{
-        margin-top: 60px;
-        margin-bottom: 80px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        font-family: 'Urbanist';
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 600;
-    }
-    .teamcontainer h2 svg{
-        margin-top: 16px;
-    }
-    .teamgrid{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: auto;
-        width: 100%;
-        max-width: 1116px;
-        margin: auto;
-        color: #FFF;
-        margin-bottom: 20px;
-        text-align: left;
-    }
-    .teamgridcard{
-        margin: auto;
-        margin-bottom: 80px;
-    }
-    .teamgridcard h3{
-        margin-top: 22px;
-        font-family: 'Urbanist', sans-serif;
-        font-size: 36px;
-        font-style: normal;
-        font-weight: 400;
-    }
-    .teamgridcard p{
-        margin-top: 24px;
-        font-family: 'Urbanist', sans-serif;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 158%; 
-        opacity: 0.3;
-    }
-    .teamgridcard a{
-        color: var(--high-tiffany, #9BEBEC);
-        font-family: 'Urbanist';
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 600;
-        text-decoration: none;
-        color: #07041E;
-        opacity: 0.6;
-    }
-    
-}*/
