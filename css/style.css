@@ -24,6 +24,9 @@ header {
     height: 70px;
     z-index: 99999;
 }
+#home{
+    z-index: 999;
+}
 #home:before {
     content: '';
     position: fixed;
@@ -258,7 +261,7 @@ margin-top: -8px;
     padding-top: 70px;
     border-bottom-right-radius: 32px;
     border-bottom-left-radius: 32px;
-    height:290px;
+    height:350px;
     }
   .menu-linksbtn{
       display: flex;
@@ -1935,7 +1938,7 @@ footer{
     width: 100%;
     max-width: 9999px;
     margin: auto;
-    z-index: 9999;
+    z-index: 1;
     color: #fff;
     gap: 30px;
     padding: 100px 50px 170px;
