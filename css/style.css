@@ -25,7 +25,7 @@ header {
     z-index: 99999;
 }
 #home{
-    z-index: 999;
+    z-index: 1;
 }
 #home:before {
     content: '';
@@ -35,7 +35,7 @@ header {
     right: 0;
     width: 3900px;
     background-color:#082F42;
-    z-index: 99;
+    z-index: 1;
     box-sizing: border-box;
 }
 .nonebar{
@@ -45,7 +45,6 @@ header {
     width: 390px;
 }
 .navbar{   
-    z-index: 999;
     display:flex;
     justify-content: center;
     text-align: center;
@@ -54,7 +53,7 @@ header {
     right: 0;
     left: 0;
     top: 0;
-    z-index: 99;
+    z-index: 9;
     width: 100%;
     max-width: 1500px;
     margin: auto;
@@ -764,61 +763,62 @@ swiper-container.mySwiper1 {
     max-width: 1970px;
     cursor: pointer;
     margin: 0 auto !important;
-  }
-  .swiper1 {
-    width: 100%;
-    max-width: 310px;
-    height: 100%;
-    max-height: 390px;
-    background-color: #95C6D6;
-    border-radius: 30px;
-    margin-left: 10px;
-  }
-  .sercardinfo{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    padding: 24px;
-    color: #FFF;
-  }
-  .sercardinfo h3{
-    font-size: 24px;
-    line-height: 140%;
-  }
-  .sercardinfo p{
-    font-size: 16px;
-    line-height: 150%;
-  }
-  .btnservice{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    bottom: 20px;
-    width: 130px;
-    list-style: none;
-    color: #fff;
-    border-radius: 100px;
-    padding: 10px;
-    margin: auto;
-    background-color: transparent;
-    cursor: pointer;
-    font-size: 16px;
-    text-decoration: none;
-    font-weight: 700;
-    gap: 5px;
-    border: 1px solid #fff;
-  }
-  .swiper1 img {
-    width: 100% !important;
-    margin: auto;
-    object-fit: cover !important;
-    border-radius: 30px;
-  }
+}
+.swiper1 {
+  width: 100%;
+  max-width: 310px;
+  height: 100%;
+  max-height: 390px;
+  background-color: #95C6D6;
+  border-radius: 30px;
+  margin-left: 10px;
+}
+.sercardinfo{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  padding: 24px;
+  color: #FFF;
+}
+.sercardinfo h3{
+  font-size: 24px;
+  line-height: 140%;
+}
+.sercardinfo p{
+  font-size: 16px;
+  line-height: 150%;
+}
+.btnservice{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  bottom: 20px;
+  width: 130px;
+  list-style: none;
+  color: #fff;
+  border-radius: 100px;
+  padding: 10px;
+  margin: auto;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 700;
+  gap: 5px;
+  border: 1px solid #fff;
+  z-index: 99999;
+}
+.swiper1 img {
+  width: 100% !important;
+  margin: auto;
+  object-fit: cover !important;
+  border-radius: 30px;
+}
 /* .mySwiper {
   width: 100%;
   max-width: 3999;
@@ -1721,18 +1721,24 @@ footer{
     padding: 10px 50px;
 }
 .footermenu{
+    position: relative;
+    z-index: 9999;
     display: flex;
     justify-content: center;
     width: 160px;
     margin-top: 40px;
 }
 .footermenu ul li a {
+    display: flex;
+    flex-direction: column;
+    position: relative;
     text-decoration: none;
     color: #0CC0DF;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
     line-height: 130%;
+    z-index: 9999;
 }
 .footermenu ul li a:hover {
     color: #0cbfdfc5;
@@ -1744,6 +1750,7 @@ footer{
     flex-direction: column;
     justify-content: space-between;
     height: 70px;
+    z-index: 9999;
 }
 .footerimglogo{
     display: flex;
@@ -1847,6 +1854,7 @@ footer{
         width: 100%;
         height: auto;
         text-align: center;
+        z-index: 99999;
     }
     .adress{
         display: flex;
