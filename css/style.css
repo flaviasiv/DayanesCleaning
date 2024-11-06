@@ -93,7 +93,7 @@ header {
 }
 .menu-linksbtn a:hover{
     color: #0CC0DF;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 .menusocial{
     display:flex;
@@ -158,6 +158,13 @@ header {
 .callnow svg{
     display: flex;
     max-width: 20px;
+}
+.menusocial ul li a svg circle{
+    fill: #0CC0DF;
+}
+.menusocial ul li a svg:hover circle{
+    fill: #fff;
+    transition: 0.1s;
 }
 .logo-w{
 z-index: 9;
@@ -442,6 +449,8 @@ margin-top: -8px;
 .bgs-web-aboutt{
     width:100% ;
     max-width: 720px;
+    object-fit: cover;
+    object-position: right;
     margin: auto;
     float: left;
 }
@@ -512,7 +521,8 @@ margin-top: -8px;
         height:547;
     }
     .bgs-web-aboutt{
-        max-width: 620;
+        max-width: 520px;
+        margin: auto;
     }  
     .abouttext{ 
         margin: 30 20 0 0;
@@ -711,6 +721,7 @@ margin-top: -8px;
     width: 100%;
     max-width: 3290px;
     margin: auto;
+    padding-top: 100px;
 }
 .services{
     width: 100%;
@@ -920,7 +931,7 @@ swiper-container.mySwiper1 {
 }
 .request a:hover,
 .request a.active {
-  transition: 0.5s ease-out;
+  transition: 0.2s ease-out;
 }
 @media screen and (max-width: 1270px) {
     .request{
@@ -955,9 +966,9 @@ text-align: center;
     width: 100%;
     max-width: 3290px;
     margin: auto;
-    padding: 70px 0px;
+    padding: 170px 0 70px;
     height: auto;
-    margin-bottom: 20;
+    margin-bottom: 20px;
 }
 .portifolio{
     width: 100%;
@@ -986,21 +997,20 @@ text-align: center;
 swiper-container.mySwiper2 {
   width: 100%;
   height: 100%;
-  max-height: 735px;
+  max-height: 555px;
   cursor: grab;
   margin: 0 !important;
 }
 swiper-slide.swiper2 {
-  max-width: 706px;
+  max-width: 506px;
   border-radius: 30px;
   margin-left: 0px;
 }
 .swiper2 img {
-  width: 700px !important;
+  width: 500px !important;
   max-width: 100% !important;
   margin: auto;
-  height: 700px;
-  border-radius: 32px;
+  border-radius: 16px;
   justify-content: start;
   object-fit: cover !important;
   object-position: center;
@@ -1022,20 +1032,18 @@ swiper-slide.swiper2 {
         padding: 90px 0 190px 0;
     }
     swiper-container.mySwiper2 {
-      max-height: 630px;
+      max-height: 530px;
       cursor: grab;
       margin: 0 !important;
     }
     swiper-slide.swiper2 {  
-            max-width: 570px;
+            max-width: 470px;
             height: 100%;
             margin: 0px;
     }
     .swiper2 img {
       width: 100% !important;
       margin: auto;
-      max-height: 600px;
-      border-radius: 32px;
       justify-content: start;
       object-fit: cover !important;
       object-position: center;
@@ -1050,7 +1058,7 @@ swiper-slide.swiper2 {
 }
 @media screen and (max-width:790px) {
 swiper-container.mySwiper2 {
-  max-height: 430px;
+  max-height: 400px;
   cursor: grab;
   margin: 0 !important;
 }
@@ -1061,10 +1069,8 @@ swiper-slide.swiper2 {
 }
 .swiper2 img {
   width: 100% !important;
-  max-width: 400px !important;
+  max-width: 420px !important;
   margin: auto;
-  height: 400px;
-  border-radius: 32px;
   justify-content: start;
   object-fit: cover !important;
   object-position: center;
@@ -1082,8 +1088,7 @@ swiper-slide.swiper2 {
     width: 100%;
     max-width: 3000px;
     margin: auto;
-    margin-top: 100;
-    padding-top: 50;
+    padding-top: 50px;
     height: 100%;
     max-height: 600px;
     background-color: #082F42;
@@ -1147,6 +1152,10 @@ bottom: 50;
     display: flex;
     flex-direction: column;
     margin: auto;
+}
+.servicescard:hover{
+    border-radius: 32px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 13px 18px;
 }
 .swiper3 .servicescard svg {
   width: 100% !important;
@@ -1613,7 +1622,7 @@ form {
     }
     #form button:hover{
         background-color: #0CC0DFcc;
-        transition: 0.7s;
+        transition: 0.1s;
     }
     .form h6{
         font-size: 14px;
@@ -1697,7 +1706,7 @@ form {
     }
     #form button:hover{
         background-color: #0CC0DFcc;
-        transition: 0.7s;
+        transition: 0.1s;
     }
     .formgroup1, .formgroup2{
         display: flex;
@@ -1741,8 +1750,8 @@ footer{
     z-index: 9999;
 }
 .footermenu ul li a:hover {
-    color: #0cbfdfc5;
-    transition: 0.5s;
+    color: #fff;
+    transition: 0.2s;
 }
 .footermenu ul{
     list-style: none;
@@ -1781,6 +1790,10 @@ footer{
     font-weight: 600;
     line-height: 130%;
 }
+.adress p a{
+    color: inherit;
+    text-decoration: none;
+}
 .footersocials{
     justify-content: right;
     width: auto;
@@ -1804,6 +1817,13 @@ footer{
 }
 .footersocials ul a{
     text-decoration: none;
+}
+.footersocials ul a svg {
+    fill: #0CC0DF;
+}
+.footersocials ul a svg:hover {
+    fill: #fff;
+    transition: 0.1s;
 }
 .rights{
     position: relative;
@@ -2002,10 +2022,10 @@ footer{
 #form button:hover{
     background-color: #FFF;
     color: #000;
-    transition: 0.2s all ease-in-out;
+    transition: 0.1s all ease-in-out;
     border: #FFF;
 }
 .btn-1:hover svg, .btnservice:hover svg path{
     fill: #000;
-    transition: 0.2s all ease-in-out;
+    transition: 0.1s all ease-in-out;
 }
