@@ -437,18 +437,19 @@ margin-top: -8px;
         line-height: 1.1;
     }
 }
-
 .aboutcontainer{
     position: relative;
     width: 100%;
-    max-width: 3290px;
-    height: 636;
+    max-width: 100vw;
+    height: 630px;
     margin: auto;
     background-color: #C8DEE2;
 }
 .bgs-web-aboutt{
-    width:100% ;
+    width:100%;
     max-width: 720px;
+    /* height setado para nao deixar o container muito grande */
+    height: 630px;
     object-fit: cover;
     object-position: right;
     margin: auto;
@@ -574,14 +575,14 @@ margin-top: -8px;
 .missioncontainer{
     position: relative;
     width: 100%;
-    max-width: 3290px;
+    max-width: 100vw;
     margin: auto;
     background-color: #81DBF4;
 }
 .mission{
     display: flex;
     width: 100%;
-    max-width: 1390px;
+    max-width: 1400px;
     margin: auto;
     justify-content: space-between;
 }
@@ -589,7 +590,8 @@ margin-top: -8px;
     max-width: 407.5px;
     align-items: center;
     justify-content: center;
-    margin: 60px auto;
+    margin: auto;
+    margin-bottom: 60px;
 }
 .missioninfo {
     max-width: 437.5px;
@@ -719,7 +721,7 @@ margin-top: -8px;
 .servicescontainer{
     background-color: #F3F3F3;
     width: 100%;
-    max-width: 3290px;
+    max-width: 100vw;
     margin: auto;
     padding-top: 100px;
 }
@@ -881,22 +883,29 @@ swiper-container.mySwiper1 {
 } */
 @media screen and (max-width:790px) {
     .servicescontainer{
-    padding: 100 0 0 0;
+    padding: 100px 10px 0 0;
     }
     .servicestitle p{
         margin: auto;
-        padding: 0 40;
+        padding: 0 40px;
         font-size:14px;
         margin-bottom: 40px;
     }
-    
-.mySwiper {
-    max-height: 630px;
-  }
+    swiper-container.mySwiper1 {
+        max-height: 440px;
+        background-color: transparent;
+      }
     .swiper1 {
-        max-width: 365px;
-        max-height: 600;
-        margin: 0 10px;
+        background-color: transparent;
+        max-width: 100vw;
+        max-height: 400px;
+    }
+    .swiper1 img {
+      width: 100% !important;
+      height: 400px;
+      margin: auto;
+      object-fit: cover !important;
+      border-radius: 30px;
     }
 }
 .request{
@@ -964,7 +973,7 @@ text-align: center;
 .portifoliocontainer{
     background-color: #fff;
     width: 100%;
-    max-width: 3290px;
+    max-width: 100vw;
     margin: auto;
     padding: 170px 0 70px;
     height: auto;
@@ -1027,7 +1036,7 @@ swiper-slide.swiper2 {
     .portifoliocontainer{
         background-color: #fff;
         width: 100%;
-        max-width: 3290px;
+        max-width: 100vw;
         margin: 0 auto;
         padding: 90px 0 190px 0;
     }
@@ -1466,7 +1475,7 @@ form {
     gap: 20px;
     width:700px;
     max-width: 100%;
-    height: 450px;
+    height: 440px;
     background-color: #FFF;
     border-radius: 25px;
     padding: 70px 80px;
@@ -1498,22 +1507,6 @@ form {
     margin: auto;
     background-color: #0CC0DF;
     cursor: pointer;
-}
-
-.form h6{
-    display: flex;
-    color: #000;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 160%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 70px;
-    padding: auto;
-    margin: auto;
-    margin-top: -5px;
 }
 .formgroup1, .formgroup2{
     display: flex;
@@ -2023,9 +2016,12 @@ footer{
     background-color: #FFF;
     color: #000;
     transition: 0.1s all ease-in-out;
-    border: #FFF;
+    border: 1px solid #07041E;
 }
 .btn-1:hover svg, .btnservice:hover svg path{
     fill: #000;
     transition: 0.1s all ease-in-out;
+}
+.btnservice:hover svg path{
+border: 1px solid #07041E;
 }
