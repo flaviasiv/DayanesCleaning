@@ -1820,7 +1820,7 @@ footer{
 }
 .rights{
     position: relative;
-    height: 81px;
+    height: 121px;
     width: 100%;
     max-width: 2990px;
     margin: auto;
@@ -1835,6 +1835,17 @@ footer{
     font-size: 14.4px;
     font-weight: 500;
     line-height: 150%;
+}
+.footer-credits, .footer-credits ul{
+ display: flex;
+ list-style: none;
+ gap: 10px;
+ padding: 10px;
+}
+.footer-credits{
+ max-width: 1200px;
+ margin: auto;
+ justify-content: space-between;
 }
 .footerimglogo2{display:none;}
 @media screen and (max-width: 770px) {
