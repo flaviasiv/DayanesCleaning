@@ -1819,12 +1819,14 @@ footer{
     transition: 0.1s;
 }
 .rights{
+    display: flex;
     position: relative;
-    height: 121px;
+    height: 101px;
     width: 100%;
-    max-width: 2990px;
+    max-width: 1300px;
     margin: auto;
-    padding: 34px 0;
+    justify-content: space-between;
+    padding: 34px 50px;
     background-color: #082F42;
     align-items: center;
     text-align: center;
@@ -1840,12 +1842,6 @@ footer{
  display: flex;
  list-style: none;
  gap: 10px;
- padding: 10px;
-}
-.footer-credits{
- max-width: 1200px;
- margin: auto;
- justify-content: space-between;
 }
 .footerimglogo2{display:none;}
 @media screen and (max-width: 770px) {
@@ -1938,8 +1934,10 @@ footer{
         text-decoration: none;
     }
     .rights{
+        flex-direction: column;
+        gap: 10px;
         height: 70px;
-        padding: 30px 0;
+        padding: 20px 0;
     }
     .rights p{
         font-size: 11px;
